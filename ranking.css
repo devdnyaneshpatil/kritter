@@ -1,0 +1,48 @@
+
+#rank-form {
+  background-color: #f0f4c3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 20px auto;
+}
+
+#rank-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+#rank-form input[type="number"],
+#rank-form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#rank-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#rank-form input[type="submit"]:hover {
+  background-color: #f4511e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#college-list {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff3e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

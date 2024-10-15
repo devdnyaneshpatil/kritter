@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kritter Assignment</title>
+    <link rel="stylesheet" href="chatbot.css" />
+    <link rel="stylesheet" href="stringConverter.css" />
+    <link rel="stylesheet" href="ranking.css" />
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <!-- String Conversion Tool Starts Here -->
+    <div class="string-converter">
+      <form id="string-form">
+        <input
+          type="text"
+          id="string-inp"
+          placeholder="Enter Your String Here...."
+        />
+        <input type="submit" value="Convert" />
+      </form>
+      <div id="output"></div>
+    </div>
+    <!-- String Conversion Tool Ends Here -->
+
+    <!-- ChatBot Starts Here -->
+    <div class="chatbot">
+      <div id="messageDisplayArea">
+        <div class="botMessage">Hello! How can I assist you today?</div>
+      </div>
+      <div id="inputArea">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type your message here..."
+        />
+        <button id="sendMessage">Send</button>
+      </div>
+    </div>
+    <!-- ChatBot Ends Here -->
+
+    <!-- Ranking System Starts here -->
+    <div class="rank-cont">
+      <form id="rank-form">
+        <label for="location">Choose Your Location</label>
+        <select name="" id="location">
+          <option value="">Location</option>
+          <option value="New York">New York</option>
+          <option value="California">California</option>
+        </select>
+        <label for="fee">Enter Your Budget</label>
+        <input type="number" name="" id="fee" placeholder="Budget..." />
+        <label for="">Enter Rankweight</label>
+        <input
+          type="number"
+          name=""
+          id="rankweight"
+          placeholder="Rankweight..."
+        />
+        <label for="feesweight">Enter Feesweight</label>
+        <input type="number" placeholder="Feesweight..." id="feesweight" />
+        <input type="submit" value="Check College" />
+      </form>
+
+      <div id="college-list"></div>
+    </div>
+
+    <!-- Ranking System Ends Here -->
+  </body>
+  <script src="string.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="ranking.js"></script>
+</html>
